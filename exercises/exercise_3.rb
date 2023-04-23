@@ -5,4 +5,6 @@ require_relative './exercise_2'
 puts "Exercise 3"
 puts "----------"
 
-# Your code goes here ...
+@store3 = Stores.where(id: 3).first 
+@store3.destroy
+puts Stores.count
